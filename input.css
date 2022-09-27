@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    @apply bg-red-800 p-4 font-medium text-lg text-white hover:bg-white hover:text-red-700 hover:border-2 hover:border-red-600
+}
+
+
+.button {
+    @apply border-[1px] px-4 py-2 hover:bg-black hover:text-white font-medium
+}
+.social-icon{
+    @apply p-4 border-[1px] border-black
+}

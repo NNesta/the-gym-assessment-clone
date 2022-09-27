@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Home page - sopra steria</title>
   </head>
-  <body class="">
+  <body class="flex flex-col">
     <section class="relative h-screen">
       <img
-        class="absolute top-0 h-full w-full object-cover -z-10"
+        class="absolute top-0 h-full max-w-full w-full object-cover -z-10"
         src="/image/home-1.jpeg"
         alt=""
       />
-      <nav class="px-32">
+      <nav class="px-32 hidden lg:block">
         <div
           class="flex justify-between items-center text-white text-xl font-medium py-4"
         >
@@ -34,20 +35,186 @@
           </ul>
         </div>
         <div class="bg-white flex justify-between p-8 font-medium text-xl">
-            <img class="h-8" src="/image/logo.png" alt="">
-<ul class="flex items-center gap-8">
-    <li>Services</li>
-    <li>Industries</li>
-    <li>Insights</li>
-    <li>Investors</li>
-    <li>About us</li>
-    <li><img class="h-4" src="/image/search.svg" alt=""></li>
-</ul>
+          <img class="h-8" src="/image/logo.png" alt="" />
+          <ul class="flex items-center gap-8">
+            <li>Services</li>
+            <li>Industries</li>
+            <li>Insights</li>
+            <li>Investors</li>
+            <li>About us</li>
+            <li><img class="h-4" src="/image/search.svg" alt="" /></li>
+          </ul>
         </div>
       </nav>
-      <div class="px-32 text-white">
-      <h1 class="text-5xl font-semibold pt-8 leading-normal">Sopra Steria and OVHcloud expand <br> their partnership to industrialise AI <br> using open source principles</h1>
-      <button class=" bg-red-700">Release the release</button></div>
+      <nav class=" flex justify-between items-center bg-white sm:hidden">
+        <img class="h-8" src="/image/logo.png" alt="" />
+        <ul class="flex items-center gap-8">
+          
+          <li><img class="h-4" src="/image/search.svg" alt="" /></li>
+          <span class="material-symbols-outlined">
+            menu
+            </span>
+        </ul>
+      </nav>
+      
+      <div class="lg:px-32 px-4 text-white">
+        <h1 class="lg:text-5xl text-2xl font-semibold pt-8 leading-normal">
+          Sopra Steria and OVHcloud expand <br />
+          their partnership to industrialise AI <br />
+          using open source principles
+        </h1>
+        <button class="btn hover:text-black">Release the release</button>
+      </div>
     </section>
+    <section class="bg-white px-32 py-4 h-screen">
+      <h1 class="text-5xl font-normal py-4">What's new</h1>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 h-96">
+        <img
+          class="object-cover h-full w-screen"
+          src="/image/Capture-1.PNG"
+          alt=""
+        />
+        <div class="px-4">
+          <h1 class="text-3xl font-semibold py-4">
+            AI for All: Two Suggestions
+          </h1>
+          <p class="text-xl leading-relaxed">
+            An article from Mohammed Sijelmassi, the CTO Sopra Steria, published
+            by Euractiv. Europe has talent, excellent research, and top
+            education. The point is scaling up: we need more researchers, AI
+            practitioners, and an open mindset.
+          </p>
+          <button
+            class="button"
+          >
+            Read more on Euractiv
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-8 px-32">
+      <div class="">
+        <img src="/image/article-1.jpeg" alt="" />
+        <h1 class="text-3xl font-semibold py-4">
+          Sopra Steria renews its Microsoft Azure Expert Managed Service
+          Provider (MSP) status
+        </h1>
+        <p class="text-gray-500 text-xl">Sep 20, 2022</p>
+        <p class="text-xl">
+          his renewal demonstrates Sopra Steria’s ability to deliver consistent,
+          repeatable high-fidelity managed services on Azure.
+        </p>
+      </div>
+      <div class="">
+        <img src="/image/article-2.jpeg" alt="" />
+        <h1 class="text-3xl font-semibold py-4">
+          Sopra Steria selected as Airbus’ referenced supplier for its
+          engineering and functional design activities
+        </h1>
+        <p class="text-gray-500 text-xl">Sep 20, 2022</p>
+        <p class="text-xl">
+          After the EMES3 listing announced in January, covering all engineering
+          activities for all Airbus Group divisions, Sopra Steria confirms its
+          expertise by winning several major contracts within the design office
+          and flight test at Airbus.
+        </p>
+      </div>
+      <div class="">
+        <img src="/image/article-3.jpeg" alt="" />
+        <h1 class="text-3xl font-semibold py-4">
+          Sopra Steria chosen by Belgian Integrated Police to drive its digital
+          transformation through the i-Police programme
+        </h1>
+        <p class="text-gray-500 text-xl">Sep 20, 2022</p>
+        <p class="text-xl">
+          Sopra Steria will be responsible for managing the programme,
+          integrating the solutions that make up the platform, migrating the
+          data, and providing technical and functional support to users.
+        </p>
+      </div>
+    </section>
+    <section class="relative h-screen w-full my-4">
+      <img
+        class="absolute top-0 left-32 h-full object-contain -z-10"
+        src="/image/inspiring.jpeg"
+        alt=""
+      />
+      <div
+        class="absolute bottom-8 left-32 bg-white text-3xl font-bold flex items-center p-8"
+      >
+        <p>
+          "The transformations underway in<br />
+          cloud an AI technology" with<br />
+          Beatrice and Roler et Saraswaat
+        </p>
+        <img class="px-4 h-16" src="/image/play.svg" alt="" />
+      </div>
+    </section>
+    <section class="relative h-screen w-full my-4">
+      <img
+        class="absolute top-0 left-32 h-full object-cover -z-10"
+        src="/image/girls.jpeg"
+        alt=""
+      />
+      <div class="absolute bottom-8 left-32 bg-white flex flex-col p-8">
+        <h1 class="text-3xl font-bold">
+          Corporate responsibility Sopra Steria, a<br> committed responsible
+          enterprise
+        </h1>
+        <p class="text-lg">
+          We, at Sopra Steria, firmly believe that digital is a source of<br />
+          opportunities and progress for all. Combined to a human dimension, it
+          <br />
+          creates a virtuous circle benefiting society as a whole.
+        </p>
+        <button class="btn">Learn more about Corporate responsibility</button>
+      </div>
+    </section>
+    <section class="px-32 h-screen">
+      <h1 class="text-4xl">Financial Report</h1>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <img src="image/Capture-3.PNG" alt="" />
+        <div class="flex flex-col gap-4 items-start">
+          <h1 class="text-3xl font-bold">
+            2021 Universal Registration<br> Document
+          </h1>
+          <p class="text-xl text-gray-500">Mar 17, 2022</p>
+          <div class="flex gap-4">
+            <a class="underline decoration-red-500 hover:text-red-500" href="">Interactive link</a>
+            <a class="underline decoration-red-500 hover:text-red-500" href="">xHTML Link</a>
+          </div>
+          <button class="button">
+            Read more
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-gray-300 px-32 flex flex-col justify-between py-4 h-[400px] text-sm"
+    >
+      <div class="flex justify-between w-full">
+        <div class="flex-1 items-end">
+          <img src="/image/logo-2.png" alt="" />
+          <p>The world is how we shape it</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <img class="social-icon" src="/image/twitter.svg" alt="" />
+          <img class="social-icon" src="/image/linkedin.svg" alt="" />
+          <img class="social-icon" src="/image/youtube.svg" alt="" />
+        </div>
+      </div>
+      <div>
+        <ul class="flex gap-8">
+          <li>Manage your cookies</li>
+          <li>Contact us</li>
+          <li>Terms of use</li>
+          <li>Personal data protection charter</li>
+          <li>Warning alert-scam/identify theft</li>
+          <li>Site map</li>
+          <li>Accessibility</li>
+        </ul>
+        <p>Sopra Steria 2022©</p>
+      </div>
+    </footer>
   </body>
 </html>
